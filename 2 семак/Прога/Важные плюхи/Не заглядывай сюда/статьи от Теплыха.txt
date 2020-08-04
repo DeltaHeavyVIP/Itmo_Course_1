@@ -1,0 +1,54 @@
+|| https://habr.com/ru/company/luxoft/blog/272025/          - сборник видосов
+|| https://www.youtube.com/watch?v=DEVaahWFY9s&t=8s         - NIO технострим
+===========================================================================================================
+|| https://www.youtube.com/watch?v=lexMtdLNrxk              - прикольная менюшка CSS
+|| https://tpverstak.ru/flex-cheatsheet/                    - FlexBox шпора
+|| https://tpverstak.ru/grid/                               - Grid шпора
+|| http://cssgridgarden.com/#ru                             - Grid игра
+===========================================================================================================
+|| https://habr.com/ru/post/125210/                         - работа с java в командной строке
+|| https://habr.com/ru/company/golovachcourses/blog/223821/ - исключения в java(часть 1)
+|| https://habr.com/ru/company/golovachcourses/blog/225585/ - исключения в java(часть 2)
+|| https://habr.com/ru/post/329498/                         - автоупаковка/распаковка
+===========================================================================================================
+|| https://habr.com/ru/post/330676/                         - Клиент-сервер шаг — за — шагом, от однопоточного до многопоточного
+|| http://www.cyberforum.ru/java-networks/thread977928.html - Клиент-сервер
+===========================================================================================================
+|| https://javadevblog.com/chto-takoe-heap-i-stack-pamyat-v-java.html  -  организация памяти в java
+|| http://ggenikus.github.io/blog/2014/05/04/gc                        -  garbage collector
+|| https://javadevblog.com/chto-takoe-pul-strok-v-java.html            -  пул строк
+===========================================================================================================
+|| https://wm-help.net/lib/b/book/3683783285/38                        - IO/NIO
+|| https://annimon.com/article/2778                                    - Stream API в картинках
+|| https://habr.com/ru/company/luxoft/blog/270383/                     - шпора по Stream API
+|| https://winterbe.com/posts/2014/07/31/java8-stream-tutorial-examples/ - Stream API Tutorial
+===========================================================================================================
+|| https://habr.com/ru/post/143237/                                    - а как же всё-таки работает многопоточность (синхронизация)
+|| https://iqi.su/Ul83r                                                - Thread'ом Java не испортишь (часть 2,1,3,4,5,6)
+|| https://habr.com/ru/post/277669/                                    - Справочник по синхронизаторам java.util.concurrent.*
+|| https://habr.com/ru/company/luxoft/blog/157273/                     - обзор java.util.concurrent.*
+|| https://habr.com/ru/post/132884/                                    - Как работает ConcurrentHashMap
+|| https://habr.com/ru/post/139870/                                    - Еще раз про skiplist…
+|| https://jsehelper.blogspot.com/2016/01/multithreading-1.html        - вопросы с собесодований
+|| https://tproger.ru/translations/java8-concurrency-tutorial-1/       - Часть 1. Параллельное выполнение кода с помощью потоков
+|| https://tproger.ru/translations/java8-concurrency-tutorial-2/       - Часть 2. Синхронизация доступа к изменяемым объектам
+|| https://tproger.ru/translations/java8-concurrency-tutorial-3/       - Часть 3. Атомарные переменные и конкурентные таблицы
+===========================================================================================================
+|| https://proselyte.net/tutorials/spring-tutorial-full-version/       - руководство по spring
+===========================================================================================================
+|| https://habr.com/ru/post/182002/                         - путешествие через вычислительный конвейер процессора
+|| https://habr.com/ru/post/188002/                         - прерывания в конвейеризированных процессорах
+|| https://clck.ru/GLFbq                                    - прерывания
+============================================================================================================
+|| https://proselyte.net/tutorials/jdbc/introduction/       - JDBC
+|| https://vk.com/videos-54530371?section=album_56086455    - PostgreSQL
+|| https://vertex-academy.com/tutorials/ru/kak-podklyuchitsya-k-baze-dannyx-postgresql-s-pom/ - подключение к postgres c JDBC
+|| http://javastudy.ru/interview/javaee-sql-jdbc-interview/ - вопросы и ответы
+============================================================================================================
+|| https://github.com/iluwatar/java-design-patterns         - 111 паттернов на java
+
+
+есть смысл делать ввод в отдельном потоке, если синхронизация всё равно будет через cyclebarier?
+
+https://stackoverflow.com/questions/5862971/java-readobject-with-nio
+Псевдоклассами называют селекторы, которые влияют на существующие элементы документа. Псевдоэлементами обычно задают и меняют область, которая изначально отсутствовала в исходном файле.

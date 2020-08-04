@@ -1,0 +1,5 @@
+http://javastudy.ru/interview/list-of-question-java-interview/     :вопросы по коллекциям
+================================================================================================================================
+https://habr.com/ru/post/329498/                                   : int and Integer(их автоупаковка и автораспаковка)
+https://javadevblog.com/chto-takoe-heap-i-stack-pamyat-v-java.html : Stack and Heap memory java 
+https://javadevblog.com/chto-takoe-pul-strok-v-java.html	   : String Pool

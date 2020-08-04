@@ -1,0 +1,98 @@
+def nani(n):
+    c=0
+    if len(n) == 3:
+        c = 100
+    elif len(n) == 2:
+        c = (ord(n[0])-48)*10 + (ord(n[1])-48)
+    elif len(n) == 1:
+        c = (ord(n[0])-48)
+    return c
+#распаковка файла
+p = open('laba3.txt')
+#чтение файла
+l = p.read()
+#разбиваем строки
+l =l.split('\n')
+k = ''
+#находим средний балл каждого
+for i in range(len(l)):
+    m = l[i]
+    m = m.split(' ')
+    b1 = nani(m[4])
+    b2 = nani(m[5])
+    b3 = nani(m[6])
+    sb = (b1+b2+b3)/3
+    k = k + m[0] + ' ' + m[1] + ' | ' + m[2] + ' | ' + m[3] + ' | ' + m[4] + ' ' + m[5] + ' ' + m[6] + ' -> ' + str(sb) + '\n'
+k = k.split('\n')
+# сортируем массив
+f = [None]*10
+im = [None]*10
+ot = [None]*10
+for i in range(len(k)-1):
+    l = k[i]
+    l = l.split(' | ')
+    y = l[0].split(' ')
+    u = y[1].split('.')
+    f[i] = y[0]
+    im[i] = u[0]
+    ot [i] = u[1]
+for i in range(9):
+    for j in range (i+1 , 10):
+        if f[i] == f[j]:
+            if im[i] == im[j]:
+                if ot[i] != ot[j]:
+                    if ord(ot[i])<ord(ot[j]):
+                        d = ot[i]
+                        ot[i] = ot[j]
+                        ot[j] = d
+                        d = im[i]
+                        im[i] = im[j]
+                        im[j] = d
+                        d = f[i]
+                        f[i] = f[j]
+                        f[j] = d
+                        d = k[i]
+                        k[i] = k[j]
+                        k[j] = d
+            elif ord(ot[i])<ord(ot[j]):
+                        d = ot[i]
+                        ot[i] = ot[j]
+                        ot[j] = d
+                        d = im[i]
+                        im[i] = im[j]
+                        im[j] = d
+                        d = f[i]
+                        f[i] = f[j]
+                        f[j] = d
+                        d = k[i]
+                        k[i] = k[j]
+                        k[j] = d
+        else:
+            if len(f[j])>len(f[i]):
+                h = f[i]
+            else:
+                h = f[j]
+            r=f[j]
+            s=f[i]
+            for p in range(len(h)):
+                if r[p] != s[p]:
+                    if ord(r[p])>ord(s[p]):
+                        d = ot[i]
+                        ot[i] = ot[j]
+                        ot[j] = d
+                        d = im[i]
+                        im[i] = im[j]
+                        im[j] = d
+                        d = f[i]
+                        f[i] = f[j]
+                        f[j] = d
+                        d = k[i]
+                        k[i] = k[j]
+                        k[j] = d
+                        break
+                    else:
+                        break
+#выводим массив
+for i in range(10):
+    print(k[i])
+p.close()
